@@ -1,0 +1,90 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+.table th.user-id-column, .table td.user-id-column {
+  text-align: left !important; /* Pastikan teks rata kiri */
+}
+
+.table th:first-child, .table td:first-child {
+  width: 5px; /* Atur lebar kolom nomor */
+  text-align: center;
+}
+
+/* Atur lebar kolom username */
+.table th:nth-child(2), .table td:nth-child(2) {
+  width: 150px; /* Ubah sesuai kebutuhan Anda */
+}
+
+/* Atur lebar kolom email */
+.table th:nth-child(3), .table td:nth-child(3) {
+  width: 200px; /* Ubah sesuai kebutuhan Anda */
+}
+
+/* Atur lebar kolom full name */
+.table th:nth-child(4), .table td:nth-child(4) {
+  width: 200px; /* Ubah sesuai kebutuhan Anda */
+}
+
+/* Atur lebar kolom action */
+.table th:nth-child(5), .table td:nth-child(5) {
+  width: 50px; /* Ubah sesuai kebutuhan Anda */
+}
+
+/* Gaya tombol edit dan delete */
+.btn-container {
+  display: flex;
+  gap: 10px; /* Memberikan jarak antara tombol */
+}
+
+.btn-edit, .btn-delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn-edit {
+  background-color: #28a745; /* Warna hijau untuk edit */
+}
+
+.btn-delete {
+  background-color: #dc3545; /* Warna merah untuk delete */
+}
+
+.btn-edit:hover, .btn-delete:hover {
+  opacity: 0.8;
+}
+
+.btn-edit svg, .btn-delete svg {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table th, .table td {
+    padding: 8px 12px;
+  }
+}

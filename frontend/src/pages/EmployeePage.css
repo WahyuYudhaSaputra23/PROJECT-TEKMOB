@@ -1,0 +1,60 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.date-picker {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.btn-download {
+  background: #bf5600;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn-download:hover {
+  background: #e66700;
+}
+
+.btn-download .fa-download {
+  margin-right: 5px;
+}
+
+.user-durations {
+  margin-top: 20px;
+}
+
+.user-durations h2 {
+  margin-bottom: 10px;
+}
+
+.user-durations table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-durations th, .user-durations td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-durations th {
+  background-color: #f4f4f4;
+}
